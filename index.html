@@ -3,107 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>王斌骅的个人主页</title>
+    <meta name="description" content="王斌骅 — 前端学习者与网页设计爱好者的个人主页。展示技能、项目与联系方式。" />
+    <title>王斌骅 — 个人主页</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="topbar">
-      <a class="brand" href="#">王斌骅</a>
-      <nav class="nav-links">
-        <a href="#about">关于我</a>
-        <a href="#skills">技能</a>
-        <a href="#contact">联系我</a>
-      </nav>
+    <header class="topbar" role="banner">
+      <div class="container topbar-inner">
+        <a class="brand" href="#home">王斌骅</a>
+        <nav class="nav-links" role="navigation" aria-label="主导航">
+          <a href="#about">关于</a>
+          <a href="#skills">技能</a>
+          <a href="#projects">项目</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-text">
-          <span class="badge">正在成长中的前端学习者</span>
-          <p class="eyebrow">个人介绍页</p>
-          <h1>你好，我是王斌骅</h1>
-          <p class="intro">
-            我正在学习前端开发，喜欢把想法变成一页页好看的网页。这个页面是我从零开始练习后，认真打磨出来的作品。
-          </p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#about">了解更多</a>
-            <a class="btn btn-secondary" href="#contact">联系我</a>
-          </div>
-        </div>
-
-        <aside class="hero-card">
-          <div class="avatar">王</div>
-          <h3>我的学习方向</h3>
-          <ul class="profile-list">
-            <li><strong>HTML</strong>：搭建网页结构</li>
-            <li><strong>CSS</strong>：美化页面样式</li>
-            <li><strong>JavaScript</strong>：让页面动起来</li>
-          </ul>
-          <div class="status">当前状态：持续学习中</div>
-        </aside>
-      </section>
-
-      <section id="about" class="section about-section">
-        <div class="section-title">
-          <p class="eyebrow">About</p>
-          <h2>关于我</h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-card">
-            <p>
-              我是一个正在一步一步学网页设计的人，喜欢简洁、清爽、容易理解的页面风格。
-              我相信只要持续练习，就能把自己的想法做成真正好看的作品。
+    <main id="home" role="main">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">个人主页</p>
+            <h1 id="hero-heading">你好，我是王斌骅</h1>
+            <p class="intro">
+              我是一名专注于前端开发与界面设计的学习者，致力于将清晰的交互与简洁的视觉结合，开发可用且美观的网页。
             </p>
-          </div>
-          <div class="stats-grid">
-            <div class="stat-card">
-              <strong>3</strong>
-              <span>正在学习的基础技能</span>
+            <ul class="hero-highlights">
+              <li>注重语义化 HTML、可访问性与响应式布局。</li>
+              <li>通过小型项目实践前端工程化与交互细节。</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-primary" href="#projects">查看项目</a>
+              <a class="btn btn-secondary" href="#contact">联系我</a>
             </div>
-            <div class="stat-card">
-              <strong>1</strong>
-              <span>正在打磨的个人主页</span>
+          </div>
+
+          <aside class="hero-card" aria-labelledby="card-heading">
+            <div class="avatar" aria-hidden="true">王</div>
+            <h3 id="card-heading">学习方向</h3>
+            <ul class="profile-list">
+              <li><strong>HTML</strong>：语义化标记与可访问性</li>
+              <li><strong>CSS</strong>：响应式布局与现代样式（Flex / Grid）</li>
+              <li><strong>JavaScript</strong>：交互、事件与异步编程基础</li>
+            </ul>
+            <div class="status">当前状态：持续学习与项目实践中</div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">关于</p>
+            <h2 id="about-heading">关于我</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <p>
+                我热衷于把设计想法用代码实现，注重可读性与可维护性。通过分解问题与持续迭代，使每个页面既实用又美观。
+              </p>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-card">
+                <strong>HTML / CSS / JS</strong>
+                <span>核心技能</span>
+              </div>
+              <div class="stat-card">
+                <strong>持续</strong>
+                <span>项目实践与学习中</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section">
-        <div class="section-title">
-          <p class="eyebrow">Skills</p>
-          <h2>我的技能</h2>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-icon">01</div>
-            <h3>HTML</h3>
-            <p>会用标签搭建网页内容，像标题、段落、图片和按钮。</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">02</div>
-            <h3>CSS</h3>
-            <p>会设置颜色、间距、字体和布局，让页面看起来更舒服。</p>
-          </article>
-          <article class="card">
-            <div class="card-icon">03</div>
-            <h3>前端学习</h3>
-            <p>正在一步步学习更高级的页面效果和交互体验。</p>
-          </article>
+      <section id="skills" class="section" aria-labelledby="skills-heading">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">技能</p>
+            <h2 id="skills-heading">我的技能</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-icon">01</div>
+              <h3>HTML</h3>
+              <p>熟悉语义化标签、可访问性属性（aria）与结构化文档。</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">02</div>
+              <h3>CSS</h3>
+              <p>掌握响应式布局、Flexbox、Grid 与样式组织方法。</p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">03</div>
+              <h3>JavaScript</h3>
+              <p>熟悉 DOM 操作、事件处理以及基本的异步模式（Promise / async）。</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <h2>想和我一起把网页做得更好看吗？</h2>
-        <p>如果你也在学习前端，我很欢迎你和我一起进步，一点一点把想法变成作品。</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="mailto:3499864982@qq.com">发邮件给我</a>
-          <a class="btn btn-secondary" href="#">回到顶部</a>
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">作品</p>
+            <h2 id="projects-heading">项目与练习</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <h3>个人主页（当前）</h3>
+              <p>从零构建的个人展示页，练习语义化结构、响应式布局与可访问性。</p>
+            </article>
+
+            <article class="card">
+              <h3>交互表单练习</h3>
+              <p>实现表单验证、可访问提示与更好的用户体验。</p>
+            </article>
+
+            <article class="card">
+              <h3>更多项目</h3>
+              <p>持续更新中，欢迎通过邮件或 GitHub 联系我讨论合作或建议。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading">联系我</h2>
+          <p>如果你希望交流前端技术、提出建议或讨论合作，欢迎通过以下方式联系我。</p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:3499864982@qq.com">发邮件给我</a>
+            <a class="btn btn-secondary" href="#home">回到顶部</a>
+          </div>
+
+          <ul class="contact-list">
+            <li>电子邮件：<a href="mailto:3499864982@qq.com">3499864982@qq.com</a></li>
+            <li>GitHub：<a href="https://github.com/134371" target="_blank" rel="noopener noreferrer">github.com/134371</a></li>
+          </ul>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>感谢你看到这里，欢迎继续学习前端。</p>
+    <footer role="contentinfo">
+      <div class="container">
+        <p>© 2026 王斌骅。保留所有权利。感谢你的浏览，欢迎继续学习与交流。</p>
+      </div>
     </footer>
   </body>
 </html>
