@@ -5,9 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="王斌骅 — 前端学习者与网页设计爱好者的个人主页。展示技能、项目与联系方式。" />
     <title>王斌骅 — 个人主页</title>
+
+    <!-- 预连接与字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- favicon 与主题色 -->
+    <link rel="icon" href="/favicon.ico">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- JSON-LD: 个人信息（可选） -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "王斌骅",
+      "jobTitle": "前端学习者",
+      "url": "https://github.com/134371",
+      "email": "mailto:3499864982@qq.com"
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
+    <!-- 无障碍跳转链接（仅在键盘聚焦时可见） -->
+    <a class="skip-link" href="#home">跳到主内容</a>
+
     <header class="topbar" role="banner">
       <div class="container topbar-inner">
         <a class="brand" href="#home">王斌骅</a>
